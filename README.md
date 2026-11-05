@@ -91,7 +91,7 @@ The skill does not make legal conclusions. It flags unresolved legal questions f
 Clone with the submodule:
 
 ```bash
-git clone --recurse-submodules <repository-url>
+git clone --recurse-submodules https://github.com/jcklpe/bylaws-refactor-kit.git
 ```
 
 In an existing checkout without it, restore the pinned revision:
