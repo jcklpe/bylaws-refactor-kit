@@ -1,0 +1,29 @@
+schema_version = 1
+
+# Project-owned settings for this repository's Project Workflows adoption, outside the shared package.
+[project]
+name = "bylaws-refactor-kit"
+root = ".."
+
+# Resolve document locations against the project root. Create folders only when they have content.
+[documents]
+readme = "README.md"
+instructions = "AGENTS.md"
+index = "TODO.md"
+active_spikes = "docs/active-spikes"
+scratch = "docs/scratch"
+archive = "docs/archive"
+
+# The parent gitlink pins the exact shared revision; no project branch is needed.
+[adoption]
+mode = "shared"
+upstream_url = "https://github.com/jcklpe/project-workflows.git"
+upstream_branch = "main"
+
+[coordination]
+mode = "local"
+repository = ""
+tooling = ""
+
+[validation]
+commands = []
