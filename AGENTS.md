@@ -1,5 +1,5 @@
 # Agent Instructions
-This repository owns organization-neutral materials for refactoring bylaws with agents: the `map-bylaws-changes` skill, its design references and genericized examples. Work on a real organization's bylaws belongs in that organization's own records; bring back only what generalizes.
+This repository owns organization-neutral materials for refactoring bylaws with agents: the `map-bylaws-changes` skill, the governance model and design principles it applies, and genericized examples. Work on a real organization's bylaws belongs in that organization's own records; bring back only what generalizes.
 
 ## Workflow source
 This repository adopts [Project Workflows](project-workflows/README.md) at `project-workflows/` as unchanged shared source, pinned by the parent gitlink to an exact detached revision. Read [docs/workflow.toml](docs/workflow.toml) first; its `project.root = ".."` resolves to this repository's root. Keep the package unchanged; this project's settings and records stay outside it.
@@ -10,7 +10,7 @@ No agent-policy system is adopted here. Rules for this repository are the ones i
 
 ## Writing the kit
 - Skills live at the repository root as `<skill-name>/SKILL.md`, named verb-first. Frontmatter uses only the standard keys: `name`, `description`, `license`, `allowed-tools`, `compatibility` and `metadata`. Descriptions contain no angle brackets.
-- Supporting material for a skill lives inside its folder (`references/`, `examples/`) so the folder works on its own when linked into an agent client.
+- Kit-wide guidance lives at the top level, not inside a skill: the kernel and rule modules model in the [README](README.md#kernel-and-rule-modules) and the [design principles](org-design-principles.md). Skills link to it with `../` paths instead of keeping copies. Only material specific to one skill, such as its examples, lives in that skill's folder.
 - Keep content organization-neutral and in plain language. Examples use a fictional organization: no real organization names, people, brand details or private records. Statute and section references in examples are illustrative.
 - The kit explains governance design; it does not give legal advice. Flag legal questions for counsel rather than resolving them.
 
