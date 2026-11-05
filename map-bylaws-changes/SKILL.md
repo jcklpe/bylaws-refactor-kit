@@ -1,6 +1,7 @@
 ---
 name: map-bylaws-changes
 description: Build and maintain a bylaws Change Map that traces every material rule in an organization's current bylaws to its treatment in a proposed rewrite. Use when refactoring bylaws or similar governing documents and reviewers need to see where each old rule went and why, without comparing documents line by line.
+license: AGPL-3.0-only
 ---
 
 # Map Bylaws Changes
@@ -11,6 +12,7 @@ Use this workflow to build and maintain a Change Map for a bylaws rewrite. The C
 - **Initial Translation:** the semantic account of the current bylaws. It restates them in plain language, one rule per numbered item in a decimal hierarchy, with reviewers' questions as bracketed notes. Verify it against the original bylaws before mapping from it.
 - **Proposed draft:** the rewritten bylaws, and any rule modules, that serve as the destination and as the source of the generic authority and decision model.
 - **[Organizational design principles](references/org-design-principles.md):** the judgment guide for the refactor. Cite a principle only when it genuinely explains the choice.
+- **[Governance kernel and rule modules](references/governance-kernel-and-rule-modules.md):** the layered model the dispositions point into: law and Articles, the bylaws kernel, board rule modules and delegations, and operational practice.
 - **Higher sources:** applicable law, the Articles of Incorporation, or source records, when a legal or source-of-truth question matters.
 
 The example [Initial Translation](examples/initial-translation.md) and [Change Map](examples/change-map.md) show an abridged, genericized pair from a real refactor.
